@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #111;
+  color: white;
+  font-family: Courier, monospace;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+}
+
+button {
+  font-family: inherit;
+  font-size: 14px;
+  color: white;
+  background: #222;
+  border: 1px solid #555;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+button:not(:disabled):hover {
+  background: #333;
+}
+
+canvas {
+  width: 600px;
+  height: 600px;
+  background: black;
+  display: block;
+}
+
+canvas:focus {
+  outline: 2px solid #555;
+}
